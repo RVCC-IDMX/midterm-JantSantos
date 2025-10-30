@@ -7,6 +7,34 @@
 /* Reviews */
 
 /* Footer */
+body {
+  background-color: white;
+}
+
+
+#gallery {
+    border: 10px solid #000000;
+    border-radius: 40px;
+    background-color: #39ff14;
+}
+
+#gallery img {
+    max-width: 100%;
+}
+
+#gallery hr {
+    border: none;
+    border-top: 10px solid#000000;
+}
+
+#gallery figure {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 50px;
+
+}
+
 
 
 /* Media state for Desktop site */
