@@ -1,51 +1,185 @@
-/* Styles for Mobile Site */
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
 
-/* Header & Hero */
+/* Color Palette 
+asul: #0f4c81 
+pula: #c1121f 
+dilaw: #f4c430 
+puti: #fefcfb 
+sand: #fff4d2  */
+/* Base Styles */
 
-/* Projects */
+body {
+    font-family: "DM Serif Text", serif;
+    background-color: #fefcfb;
+    color: #0f4c81;
+    margin: 0;
+    padding: 0;
+}
 
-/* Reviews */
+/* Header */
+header {
+    text-align: center;
+    background-color: #0f4c81;
+    color: #fefcfb;
+    padding: 16px 0px 32px 0px ;
+    border-bottom: 6px solid #f4c430;
+}
+
+header h1 {
+    font-family: "Rammetto One", sans-serif;
+    font-size: 40px;
+    
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    background-color: #fff4d2;
+    padding: 32px 16px;
+    border: 6px solid #f4c430;
+}
+
+#hero img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.hero-text {
+    margin-top: 24px;
+    color: #0f4c81;
+}
+
+.hero-text h2 {
+    font-family: "Rammetto One", sans-serif;
+    font-size: 40px;
+    margin: 8px 0;
+    color: #0f4c81;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    max-width: 800px;       /* Keeps the paragraph at a readable width */
+    margin: 0 auto;         /* Centers it horizontally HELPED */
+}
+
+/* Projects Section */
+#projects {
+    padding: 32px;
+    background-color: #fff4d2;
+    border: 6px solid #f4c430;
+}
+
+#projects h2 {
+    text-align: center;
+    font-family: "Rammetto One", sans-serif;
+    font-size: 40px;
+    color: #0f4c81;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+    border: 3px solid #0f4c81;
+    border-radius: 20px;
+    background-color: #fefcfb;
+    padding: 16px;  
+}
+
+.project img {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border: 3px solid #0f4c81;
+    padding: 3px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.description h3 {
+    font-family: "Story Script", cursive;
+    font-size: 32px;
+    color: #0f4c81;
+}
+
+.description p {
+    color: #000;
+    font-size: 16px;
+}
+
+/* Reviews Section */
+#reviews {
+    background-color: #0f4c81;
+    font-family: "DM Serif Text", serif;
+    color: #fefcfb;
+    padding: 2px;
+}
+
+#reviews h2 {
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+    font-size: 45px;
+    color: #f4c430;
+}
+
+.review {
+    background-color: #fefcfb;
+    color: #0f4c81;
+    border: 3px solid #f4c430;
+    border-radius: 20px;
+    padding: 16px;
+    margin: 16px auto;
+    max-width: 600px;
+}
+
+.review .name {
+    font-weight: bold;
+    font-family: "DM Serif Text", serif;
+    color: #c1121f;
+    font-size: 18px;
+}
+
+.review .rating {
+    color: #f4c430;
+    font-size: 30px;
+}
 
 /* Footer */
-body {
-  background-color: white;
-}
-
-
-#gallery {
-    border: 10px solid #000000;
-    border-radius: 40px;
-    background-color: #39ff14;
-}
-
-#gallery img {
-    max-width: 100%;
-}
-
-#gallery hr {
-    border: none;
-    border-top: 10px solid#000000;
-}
-
-#gallery figure {
+footer {
     text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 50px;
-
+    background-color: #c1121f;
+    color: #fefcfb;
+    padding: 16px 0;
+    font-size: 20px;
+    font-family: "Story Script", cursive;
+    border-top: 6px solid #f4c430;
 }
 
+/* Responsive Design */
+@media (min-width: 768px) {
+    .project {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
 
+    .project img {
+        width: 40%;
+        margin-right: 32px;
+    }
 
-/* Media state for Desktop site */
-@media (min-width: 1000px) {
-
-    /* Header & Hero */
-
-    /* Projects */
-
-    /* Reviews */
-
-    /* Footer */
-
+    .description {
+        max-width: 400px;
+    }
 }
